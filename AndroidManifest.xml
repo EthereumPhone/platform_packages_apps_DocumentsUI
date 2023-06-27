@@ -114,6 +114,11 @@
                 <category android:name="android.intent.category.APP_FILES" />
             </intent-filter>
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+	    <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="documentsui" android:host="ex.com" />
+            </intent-filter>
         </activity-alias>
 
         <activity
